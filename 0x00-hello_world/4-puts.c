@@ -1,11 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
- * Description:Should return a string 
- * Return : Always (0)
+ * main - Prints "Programming is like building a multilingual
+ * puzzle,followed by a new line."
+ * Return:Always (0)
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+
 	return (0);
 }
