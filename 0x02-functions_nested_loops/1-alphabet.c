@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * main - printing alphabets
+ *print_alphabet - print alphabets
  *
- * Return: Always 0.
+ *Description: print_alphabet use to print a-z
+ *
+ *Return: returnnothind
+ *
  */
 void print_alphabet(void)
 {
