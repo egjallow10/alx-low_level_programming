@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <ctype.h>
 /**
  *_islower - to check for lower case of int c
  *@c: value to be check for by the function
@@ -8,7 +8,6 @@
  *
  *Return: return the integer 0
  */
-
 int _islower(int c)
 {
 	char check;
@@ -25,3 +24,4 @@ int _islower(int c)
 
 	return (0);
 }
+
