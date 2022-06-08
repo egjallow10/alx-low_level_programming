@@ -1,19 +1,21 @@
 #include "main.h"
 /**
- *main - print out the putchar
+ * print_alphabet_x10 - print out alphabets 10s
+ *
  * Description: return the required results
- * Return: return integer value 0
+ *
+ * Return: return void
  */
-int print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
-        char i;
-        int k;
+	char i;
+	int k;
 
-        for (k = 0; k < 10; k++)
-        {
-                for (i = 'a'; i <= 'z'; i++)
-                        _putchar(i);
-                _putchar(10);
-        }
-        return (0);
+	for (k = 0; k < 10; k++)
+	{
+		for (i = 'a'; i <= 'z'; i++)
+			_putchar(i);
+		_putchar(10);
+	}
+	return (0);
 }
