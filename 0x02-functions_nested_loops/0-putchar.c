@@ -1,9 +1,8 @@
-#include "_putchar.c"
-
+#include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *main - print out the putchar
+ * Description: return the required results
+ * Return: return integer value 0
  */
 int main(void)
 {
