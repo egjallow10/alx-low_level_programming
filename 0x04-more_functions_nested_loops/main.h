@@ -1,21 +1,24 @@
-char _putchar(char c);
+#ifndef MAIN_H
+#define MAIN_H
 
-void print_alphabet(void);
+int _putchar(int c);
 
-void print_alphabet_x10(void);
+int _isupper(int c);
 
-int _islower(int c);
+int _isdigit(int c);
 
-int _isalpha(int c);
+int mul(int a, int b);
 
-int print_sign(int n);
+void print_numbers(void);
 
-int _abs(int x);
+void print_most_numbers(void);
 
-int print_last_digit(int x);
+void more_numbers(void);
 
-void jack_bauer(void);
+void print_line(int n);
 
-int add(int x, int y);
+void print_diagonal(int n);
 
-void print_to_98(int n);
+void print_square(int size);
+
+#endif
