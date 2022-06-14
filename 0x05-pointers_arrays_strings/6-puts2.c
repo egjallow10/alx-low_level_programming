@@ -3,8 +3,8 @@
 
 /**
  * puts2 - prints one character of two
+ * @star: string to a char
  *
- * @star: string to print one 
  * Return: void
  */
 void puts2(char *star)
