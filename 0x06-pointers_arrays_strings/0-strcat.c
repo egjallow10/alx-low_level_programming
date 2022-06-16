@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * *_strcat - concat the two strings
  * @dest: pointer destination
