@@ -1,23 +1,21 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *print_chessboard - description
- * @a: board
- * Return: void
+ * print_diagsums - description
+ * @a: 2d array of int types
+ * @size: size of array (square)
  */
 
-
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-int i, j;
+	int i, sum1 = 0, sum2 = 0;
 
-for (i = 0; i < 8; i++)
-{
-	for (j = 0; j < 8; j++)
+	for (i = 0; i < size; i++)
 	{
-		_putchar(a[i][j]);
+		sum1 += a[i];
+		sum2 += a[size - i - 1];
+		a += size;
 	}
-	_putchar('\n');
-}
-
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);
 }
