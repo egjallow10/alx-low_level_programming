@@ -1,4 +1,3 @@
-#include <main.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -11,24 +10,20 @@
 
 char *_strdup(char *str)
 {
-int i = 0, size = 0;
-char *m;
+	char *s;
+	int i;
 
-if (str == NULL)
-	return (NULL);
-
-for (; str[size] != '\0'; size++)
-;
-
-/*+1 on the size puts the end of string character*/
-m = malloc(size * sizeof(*str) + 1);
-
-if (m == 0)
-	return (NULL);
-else
-{
-	for (; i < size; i++)
-		m[i] = str[i];
-}
-return (m);
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; *(str + i) != '\0'; i++)
+		;
+	s = malloc(i + 1);
+	if (s == 0 || s == NULL)
+		return (NULL);
+	for (i = 0; *(str + i) != '\0'; i++)
+	{
+		s[i] = *(str + i);
+	}
+	s[i] = *(str + i);
+	return (s);
 }
