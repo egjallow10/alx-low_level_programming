@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_most_numbers - prints numbers excluding 2and
+ * Return: nothinf
+ */
+
 void print_most_numbers(void)
 {
 	char n = 0;
