@@ -30,8 +30,7 @@ typedef struct hash_table_s
 {
 	unsigned long int size; /* size of array */
 	hash_node_t **array; /* pointers to heads of linked lists for chaining */
-} hash_table_t;#ifndef __HASH_TABLES_H__
-#define __HASH_TABLES_H__
+} hash_table_t;
 
 
 /**
