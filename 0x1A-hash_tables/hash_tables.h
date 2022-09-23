@@ -1,6 +1,6 @@
 #ifndef __HASH_TABLES_H__
 #define __HASH_TABLES_H__
-
+#include <stdlib.h>
 
 /**
  * struct hash_node_s - of a hash table
@@ -62,6 +62,8 @@ typedef struct hash_table_s
 	unsigned long int size; /* size of array */
 	hash_node_t **array; /* pointers to heads of linked lists for chaining */
 } hash_table_t;
+
+hash_table_t *hash_table_create(unsigned long int size);
 
 
 #endif /* __HASH_TABLES_H__ */
